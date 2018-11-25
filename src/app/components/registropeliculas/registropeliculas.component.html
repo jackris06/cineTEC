@@ -1,0 +1,49 @@
+<!--Boton que sirve para insertar valores dentro de las tablas respectivas-->
+<a class="btn btn-danger btn-block" data-toggle="collapse" href="#collapseForm" role="button" aria-expanded="false"
+  aria-controls="collapseForm">
+  Anadir
+</a>
+
+<!--Formulario para anadir nuevos elementos a la tabla-->
+<!-- Pelicula, nombre, imagen, duracion, protagonistas,director,clasificación -->
+<div class="collapse" id="collapseForm">
+  <div class="card card-body">
+    <form class="emp-form" #Form="ngForm" (ngSubmit)="onSubmit(Form)">
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <input class="form-control" name="NombreOriginal" #NombreOriginal="ngModel" [(ngModel)]="Pelicula.selected.NombreOriginal"
+            placeholder="Nombre Original">
+        </div>
+        <div class="form-group col-md-3">
+          <input class="form-control" name="Nombre" #Nombre="ngModel" [(ngModel)]="Pelicula.selected.Nombre"
+            placeholder="Nombre">
+        </div>
+        <div class="form-group col-md-3">
+          <input class="form-control" name="Imagen" #Imagen="ngModel" [(ngModel)]="Pelicula.selected.Imagen"
+            placeholder="Imagen">
+        </div>
+        <div class="form-group col-md-3">
+          <input class="form-control" name="Clasificacion" #Clasificacion="ngModel" [(ngModel)]="Pelicula.selected.Clasificacion"
+            placeholder="Clasificacion">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <input class="form-control" name="Duracion" #Duracion="ngModel" [(ngModel)]="Pelicula.selected.Duracion"
+            placeholder="Duracion">
+        </div>
+        <div class="form-group col-md-3">
+          <input class="form-control" name="NombreDirector" #NombreDirector="ngModel" [(ngModel)]="Pelicula.selected.NombreDirector"
+            placeholder="NombreDirector">
+        </div>
+        <div class="form-group col-md-3">
+          <input class="form-control" name="ApellidoDirector" #ApellidoDirector="ngModel" [(ngModel)]="Pelicula.selected.ApellidoDirector"
+          placeholder="Apellido Director">
+        </div>
+        <div class="form-group col-md-3">
+          <button type="submit" class="btn btn-danger btn-block">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

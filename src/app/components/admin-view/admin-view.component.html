@@ -1,0 +1,26 @@
+<div style="text-align:center">
+  <h1>
+    CINETEC
+  </h1>
+</div>
+<!-- Barra de navegación que contiene el menu de navegacion del administrador. -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="collapse navbar-collapse" id="navbaColor02">
+    <!--<a class="nav-link" href="/clientes" routerlink="/clientes">Clientes <span class="sr-only">(current)</span></a>-->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/registropeliculas" routerLinkActive="active">Registro de Peliculas</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/registrocines" routerLinkActive="active">Registro de Cines</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/registrosalas" routerLinkActive="active">Registro de Salas</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/asignacionproyecciones" routerLinkActive="active">Asignacion de proyecciones</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
